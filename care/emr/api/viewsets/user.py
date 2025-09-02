@@ -7,7 +7,6 @@ from rest_framework.exceptions import PermissionDenied
 from rest_framework.parsers import MultiPartParser
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.response import Response
-
 from care.emr.api.viewsets.base import EMRModelViewSet
 from care.emr.models import Organization
 from care.emr.models.organization import OrganizationUser

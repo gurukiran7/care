@@ -19,7 +19,7 @@ class Command(BaseCommand):
     def handle(self, *args, **options):
         permissions = PermissionController.get_permissions()
         roles = RoleController.get_roles()
-        with transaction.atomic(), Lock("sync_permissions_roles", 900):
+        with transaction.atomic(), Lock("test", 5):
             # Create, update permissions and delete old permissions
             PermissionModel.objects.all().update(temp_deleted=True)
             for permission, metadata in permissions.items():
