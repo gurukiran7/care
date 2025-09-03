@@ -51,6 +51,7 @@ pydantic-extra-types = "2.10.2"
 phonenumberslite = "==8.13.54"
 python-magic = {version = "==0.4.28", index = "python-magic-bin"}
 evalidate = "2.0.5"
+hrm = { git = "https://github.com/gurukiran7/care_hrm_be.git" 
 
 [dev-packages]
 boto3-stubs = { extras = ["s3", "boto3"], version = "*" }
