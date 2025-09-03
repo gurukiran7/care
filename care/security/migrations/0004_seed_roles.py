@@ -27,7 +27,7 @@ def delete_roles(apps, schema_editor):
 class Migration(migrations.Migration):
 
     dependencies = [
-        ('security', '0003_update_default_role'),
+        ('security', '0003_migrate_default_role_change'),
     ]
 
     operations = [
